@@ -52,7 +52,7 @@ npm run build
 
 **解決方法**: 使用 css 將這塊圖去掉
 
-```sass=
+```scss
 a[href="https://froala.com/wysiwyg-editor"],
 a[href="https://www.froala.com/wysiwyg-editor?k=u"] {
   padding: 0 !important;
@@ -72,7 +72,7 @@ a[href="https://www.froala.com/wysiwyg-editor?k=u"] {
 須載入插件的 css，檔名: froala_style.css
 路徑: node_modules/froala-editor/css/third_party/
 
-```htmlmixed=
+```html
 /* 須加上 class 名稱 */
 <div class="fr-view">
     <div v-html="content" />
