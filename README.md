@@ -78,3 +78,14 @@ a[href="https://www.froala.com/wysiwyg-editor?k=u"] {
     <div v-html="content" />
 </div>
 ```
+
+### 原始碼功能
+
+轉成原始碼編輯時，會出現一段內建文字: 
+```
+<p data-f-id="pbf" style="text-align: center; font-size: 14px; margin-top: 30px; opacity: 0.65; font-family: sans-serif;">Powered by <a href="https://www.froala.com/wysiwyg-editor?pb=1" title="Froala Editor">Froala Editor</a></p>
+```
+
+![](https://i.imgur.com/JvduuGJ.png)
+
+目前找不到方法在原始碼編輯狀態下，移除或隱藏這段文字，但 emit 回父元件時，有透過 getSimpleText() 移除，此段文字不會送到伺服器
